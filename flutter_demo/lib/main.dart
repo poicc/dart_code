@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/basic/date_picker_pub_demo.dart';
 // import 'package:flutter_demo/basic/aspect_ratio.dart';
 // import 'package:flutter_demo/basic/card_demo.dart';
 // import 'package:flutter_demo/basic/layout_demo.dart';
@@ -8,7 +9,9 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_demo/basic/button_demo.dart';
 // import 'package:flutter_demo/basic/floating_action_button_demo.dart';
 // import 'package:flutter_demo/basic/form_demo.dart';
-import 'package:flutter_demo/basic/form_widget.dart';
+// import 'package:flutter_demo/basic/form_widget.dart';
+// import 'package:flutter_demo/basic/date_demo.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +29,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: const FormWidget(),
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
+      home: const DatePickerPubDemo(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const Tabs(),
