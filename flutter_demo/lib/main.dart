@@ -7,7 +7,8 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_demo/pages/appbar_page.dart';
 // import 'package:flutter_demo/basic/button_demo.dart';
 // import 'package:flutter_demo/basic/floating_action_button_demo.dart';
-import 'package:flutter_demo/basic/form_demo.dart';
+// import 'package:flutter_demo/basic/form_demo.dart';
+import 'package:flutter_demo/basic/form_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: const FormDemo(),
+      home: const FormWidget(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const Tabs(),
