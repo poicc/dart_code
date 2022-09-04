@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/basic/news_content.dart';
+import 'package:flutter_demo/basic/news_page.dart';
 // import 'basic/my_dialog_demo.dart';
-import 'package:flutter_demo/basic/http_demo.dart';
+// import 'package:flutter_demo/basic/http_demo.dart';
 // import 'package:flutter_demo/basic/swiper_demo.dart';
 // import 'package:flutter_demo/basic/aspect_ratio.dart';
 // import 'package:flutter_demo/basic/card_demo.dart';
@@ -36,17 +38,13 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
-      home: HttpDemo(),
+      // home: const NewsPage(),
       // onGenerateRoute: onGenerateRoute,
-      // routes: {
-      //   '/': (context) => const Tabs(),
-      //   '/search': (context) => const SearchPage(
-      //         title: '搜索',
-      //       ),
-      //   '/from': (context) => const FormPage(
-      //         title: '搜索',
-      //       ),
-      // },
+      routes: {
+        '/': (context) => const NewsPage(),
+        '/news-content': (context, {arguments}) =>
+            NewsContent(arguments: arguments),
+      },
     );
   }
 }

@@ -40,6 +40,7 @@ dependencies:
   flutter_swiper_null_safety: ^1.0.2
   http: ^0.13.3
   dio: ^4.0.6
+  flutter_html: ^2.1.0
 
 dev_dependencies:
   flutter_test:
