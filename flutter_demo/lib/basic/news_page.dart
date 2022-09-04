@@ -78,6 +78,7 @@ class _NewsPageState extends State<NewsPage> {
                             maxLines: 1,
                           ),
                           onTap: () {
+                            print(_list[index]);
                             Navigator.pushNamed(context, '/news-content',
                                 arguments: {'aid': _list[index]['aid']});
                           },
@@ -94,6 +95,12 @@ class _NewsPageState extends State<NewsPage> {
                             '${_list[index]['title']}',
                             maxLines: 1,
                           ),
+                          onTap: () {
+                            print(_list[index]);
+                            print(_list[index]['aid']);
+                            Navigator.pushNamed(context, '/news-content',
+                                arguments: {'aid': _list[index]['aid']});
+                          },
                         ),
                         const Divider()
                       ],

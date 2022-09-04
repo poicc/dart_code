@@ -29,9 +29,10 @@ class _NewsContentState extends State<NewsContent> {
 
   _getData() async {
     var apiUrl =
-        "http://www.phonegap100.com/appapi.php?a=getPortalList&catid=${arguments['aid']}";
+        "http://www.phonegap100.com/appapi.php?a=getPortalArticle&aid=${arguments['aid']}";
     var response = await Dio().get(apiUrl);
     var res = json.decode(response.data)['result'];
+    print(res);
     setState(() {
       _list = res;
     });
