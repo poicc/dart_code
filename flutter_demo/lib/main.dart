@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_demo/basic/dialog_demo.dart';
-import 'package:flutter_demo/basic/my_dialog_demo.dart';
+// import 'basic/my_dialog_demo.dart';
+import 'package:flutter_demo/basic/http_demo.dart';
 // import 'package:flutter_demo/basic/swiper_demo.dart';
 // import 'package:flutter_demo/basic/aspect_ratio.dart';
 // import 'package:flutter_demo/basic/card_demo.dart';
@@ -14,8 +14,6 @@ import 'package:flutter_demo/basic/my_dialog_demo.dart';
 // import 'package:flutter_demo/basic/form_widget.dart';
 // import 'package:flutter_demo/basic/date_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
-import 'basic/my_dialog_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +36,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
-      home: MyDialog(),
+      home: HttpDemo(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const Tabs(),
