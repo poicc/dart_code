@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/basic/date_picker_pub_demo.dart';
+import 'package:flutter_demo/basic/swiper_demo.dart';
 // import 'package:flutter_demo/basic/aspect_ratio.dart';
 // import 'package:flutter_demo/basic/card_demo.dart';
 // import 'package:flutter_demo/basic/layout_demo.dart';
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
-      home: const DatePickerPubDemo(),
+      home: const SwiperDemo(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const Tabs(),
