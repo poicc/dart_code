@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/class/basic_widget.dart';
+// import 'package:flutter_demo/class/page1.dart';
 // import 'package:flutter_demo/basic/text_widget.dart';
 // import 'package:flutter_demo/basic/image_widget.dart';
 // import 'package:flutter_demo/basic/news_content.dart';
@@ -22,8 +24,9 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_demo/basic/routes.dart';
 // import 'package:flutter_demo/basic/stack_align.dart';
 // import 'package:flutter_demo/pages/appbar_page.dart';
-import 'package:flutter_demo/basic/stack_positioned.dart';
+// import 'package:flutter_demo/basic/stack_positioned.dart';
 // import 'package:flutter_demo/basic/button_demo.dart';
+// import 'package:flutter_demo/class/image_test.dart';
 // import 'package:flutter_demo/basic/floating_action_button_demo.dart';
 // import 'package:flutter_demo/basic/form_demo.dart';
 // import 'package:flutter_demo/basic/form_widget.dart';
@@ -51,7 +54,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
-      home: StackDemo1(),
+      home: const BasicWidget(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const NewsPage(),
