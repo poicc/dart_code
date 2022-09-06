@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/class/basic_widget.dart';
-// import 'package:flutter_demo/class/page1.dart';
+import 'package:flutter_demo/feign/screens/main_screen.dart';
 // import 'package:flutter_demo/basic/text_widget.dart';
 // import 'package:flutter_demo/basic/image_widget.dart';
 // import 'package:flutter_demo/basic/news_content.dart';
@@ -54,7 +53,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
-      home: const BasicWidget(),
+      home: const MainScreen(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const NewsPage(),
