@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/class/my_button.dart';
+import 'package:flutter_demo/class1/my_button.dart';
 
 class MyText extends StatefulWidget {
   const MyText({Key? key}) : super(key: key);

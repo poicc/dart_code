@@ -24,24 +24,24 @@ class ButtonDemo extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               // 已过时
-              RaisedButton(
-                onPressed: () {
-                  print('点击了');
-                },
-                child: const Text('普通按钮'),
-              ),
+              // RaisedButton(
+              //   onPressed: () {
+              //     print('点击了');
+              //   },
+              //   child: const Text('普通按钮'),
+              // ),
               const SizedBox(
                 width: 20,
               ),
-              RaisedButton(
-                textColor: Colors.white,
-                color: Colors.green,
-                elevation: 10,
-                onPressed: () {
-                  print('点击了');
-                },
-                child: const Text('阴影按钮'),
-              ),
+              // RaisedButton(
+              //   textColor: Colors.white,
+              //   color: Colors.green,
+              //   elevation: 10,
+              //   onPressed: () {
+              //     print('点击了');
+              //   },
+              //   child: const Text('阴影按钮'),
+              // ),
             ],
           ),
           const SizedBox(
@@ -53,15 +53,15 @@ class ButtonDemo extends StatelessWidget {
               SizedBox(
                 height: 60,
                 width: 200,
-                child: RaisedButton(
-                  textColor: Colors.white,
-                  color: Colors.pink.shade200,
-                  elevation: 10,
-                  onPressed: () {
-                    print('点击了');
-                  },
-                  child: const Text('有宽高的按钮'),
-                ),
+                // child: RaisedButton(
+                //   textColor: Colors.white,
+                //   color: Colors.pink.shade200,
+                //   elevation: 10,
+                //   onPressed: () {
+                //     print('点击了');
+                //   },
+                //   child: const Text('有宽高的按钮'),
+                // ),
               ),
             ],
           ),
@@ -73,18 +73,18 @@ class ButtonDemo extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 child: Container(
-                  height: 60,
-                  margin: const EdgeInsets.all(20),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: Colors.blue,
-                    elevation: 10,
-                    onPressed: () {
-                      print('点击了');
-                    },
-                    child: const Text('整宽按钮'),
-                  ),
-                ),
+                    // height: 60,
+                    // margin: const EdgeInsets.all(20),
+                    // child: RaisedButton(
+                    //   textColor: Colors.white,
+                    //   color: Colors.blue,
+                    //   elevation: 10,
+                    //   onPressed: () {
+                    //     print('点击了');
+                    //   },
+                    //   child: const Text('整宽按钮'),
+                    // ),
+                    ),
               ),
             ],
           ),
@@ -95,17 +95,17 @@ class ButtonDemo extends StatelessWidget {
                 child: Container(
                   height: 60,
                   margin: const EdgeInsets.all(20),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: Colors.orange,
-                    elevation: 10,
-                    onPressed: () {
-                      print('点击了');
-                    },
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    child: const Text('带圆角带按钮'),
-                  ),
+                  // child: RaisedButton(
+                  //   textColor: Colors.white,
+                  //   color: Colors.orange,
+                  //   elevation: 10,
+                  //   onPressed: () {
+                  //     print('点击了');
+                  //   },
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(10)),
+                  //   child: const Text('带圆角带按钮'),
+                  // ),
                 ),
               ),
             ],

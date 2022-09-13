@@ -45,15 +45,16 @@ class _ParentState extends State<Parent> {
     return Scaffold(
       appBar: AppBar(title: const Text("setState demo")),
       body: Center(
-          child: RaisedButton(
-        ///点击事件
-        onPressed: () {
-          setState(() {
-            _counter++;
-          });
-        },
-        child: Child(_counter),
-      )),
+          //     child: RaisedButton(
+          //   ///点击事件
+          //   onPressed: () {
+          //     setState(() {
+          //       _counter++;
+          //     });
+          //   },
+          //   child: Child(_counter),
+          // )
+          ),
     );
   }
 

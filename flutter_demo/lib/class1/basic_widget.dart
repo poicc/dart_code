@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/class/button_widget.dart';
+import 'package:flutter_demo/class1/button_widget.dart';
 
 class BasicWidget extends StatefulWidget {
   const BasicWidget({Key? key}) : super(key: key);

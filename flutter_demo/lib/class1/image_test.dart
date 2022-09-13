@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class ImageTest extends StatefulWidget {
@@ -39,17 +37,17 @@ class _ImageTestState extends State<ImageTest> {
                   image: NetworkImage(_list[_num]), fit: BoxFit.cover),
             ),
           ),
-          RaisedButton(
-            textColor: Colors.white,
-            color: Colors.blue,
-            elevation: 10,
-            onPressed: () {
-              setState(() {
-                _num = Random().nextInt(6);
-              });
-            },
-            child: const Text('切换图片'),
-          ),
+          // RaisedButton(
+          //   textColor: Colors.white,
+          //   color: Colors.blue,
+          //   elevation: 10,
+          //   onPressed: () {
+          //     setState(() {
+          //       _num = Random().nextInt(6);
+          //     });
+          //   },
+          //   child: const Text('切换图片'),
+          // ),
         ],
       ),
     );

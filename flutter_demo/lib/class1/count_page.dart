@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:number/my_count.dart';
-import 'package:flutter_demo/class/my_text.dart';
+import 'package:flutter_demo/class1/my_text.dart';
 
 class CountPage extends StatelessWidget {
   const CountPage({Key? key}) : super(key: key);
