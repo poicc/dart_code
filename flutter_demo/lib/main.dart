@@ -33,8 +33,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-import 'class2/layout_widget.dart';
 import 'class2/theme_state_model.dart';
+import 'day21/day02.dart';
 
 void main() {
   runApp(const MyApp());
@@ -120,14 +120,14 @@ class MyApp extends StatelessWidget {
             navigatorKey: _navKey,
             debugShowCheckedModeBanner: false,
             title: 'Flutter UIs',
-            theme: themeList[model.themeIndex],
+            // theme: themeList[model.themeIndex],
             localizationsDelegates: const [
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate
             ],
             supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
             // home: PaintPage(doubleList: doubleList),
-            home: const LayoutWidget(),
+            home: const ProfileTwoPage(),
             // onGenerateRoute: onGenerateRoute,
             // routes: {
             //   '/': (context) => const NewsPage(),
