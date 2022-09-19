@@ -34,7 +34,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import 'class2/theme_state_model.dart';
-import 'day21/day05.dart';
+import 'day21/day06.dart';
 
 void main() {
   runApp(const MyApp());
@@ -127,7 +127,7 @@ class MyApp extends StatelessWidget {
             ],
             supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
             // home: PaintPage(doubleList: doubleList),
-            home: const TodoHomePage(),
+            home: const TodoHomeTwoPage(),
             // onGenerateRoute: onGenerateRoute,
             // routes: {
             //   '/': (context) => const NewsPage(),
