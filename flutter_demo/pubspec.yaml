@@ -48,6 +48,7 @@ dependencies:
   scoped_model: ^2.0.0
   font_awesome_flutter: ^10.2.1
   flutter_custom_clippers: ^2.0.0
+  event_bus: ^2.0.0
 
 dev_dependencies:
   flutter_test:
