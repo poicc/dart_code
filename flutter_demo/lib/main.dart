@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/class3/route/page_one.dart';
-import 'package:flutter_demo/class3/route/page_three.dart';
-import 'package:flutter_demo/class3/route/unknown_page.dart';
+import 'package:flutter_demo/route/count/count_page.dart';
+import 'package:flutter_demo/route/page_one.dart';
+import 'package:flutter_demo/route/page_three.dart';
+import 'package:flutter_demo/route/unknown_page.dart';
 // import 'package:flutter_demo/feign/screens/main_screen.dart';
 // import 'package:flutter_demo/basic/text_widget.dart';
 // import 'package:flutter_demo/basic/image_widget.dart';
@@ -35,9 +36,8 @@ import 'package:flutter_demo/class3/route/unknown_page.dart';
 // import 'package:flutter_demo/basic/date_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'class3/count/count_page.dart';
-import 'class3/route/page_two.dart';
-import 'day21/day07.dart';
+import 'index_page.dart';
+import 'route/page_two.dart';
 
 void main() {
   runApp(const MyApp());
@@ -138,7 +138,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
       // home: PaintPage(doubleList: doubleList),
-      home: const LoginSevenPage(),
+      home: const IndexPage(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const NewsPage(),
