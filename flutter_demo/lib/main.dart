@@ -36,8 +36,7 @@ import 'package:flutter_demo/route/unknown_page.dart';
 // import 'package:flutter_demo/basic/date_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'index_page.dart';
-import 'route/page_two.dart';
+import 'file/my_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,7 +45,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     // List themeList = [
@@ -122,7 +120,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         'page_one': (context) => const PageOne(),
-        'page_two': (context) => const PageTwo(),
+        // 'page_two': (context) => const PageTwo(),
         'page_three': (context) => const PageThree(),
         'page_count': (context) => const CountAddPage(),
       },
@@ -138,7 +136,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
       // home: PaintPage(doubleList: doubleList),
-      home: const IndexPage(),
+      home: const MyApp1(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const NewsPage(),

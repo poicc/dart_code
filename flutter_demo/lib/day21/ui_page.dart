@@ -13,6 +13,7 @@ import 'day09.dart';
 import 'day10.dart';
 import 'day11.dart';
 import 'day12_dialogs.dart';
+import 'day13.dart';
 
 class UiPage extends StatelessWidget {
   const UiPage({Key? key}) : super(key: key);
@@ -237,7 +238,7 @@ class UiPage extends StatelessWidget {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                           builder: (BuildContext context) =>
-                              const LandingOnePage()),
+                              const PinCodeTextFieldPage()),
                     );
                   },
                 ),
