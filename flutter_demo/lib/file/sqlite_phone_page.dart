@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/file/phone_model.dart';
+import 'package:provider/provider.dart';
 import 'package:sqlite3/sqlite3.dart' as sqlite;
 // import 'package:sqlite3/src/common/result_set.dart' as Row;
 
@@ -107,6 +109,7 @@ class _SqlitePhonePageState extends State<SqlitePhonePage> {
 
   @override
   Widget build(BuildContext context) {
+    final counter = Provider.of<PhoneModel>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red.shade300,
@@ -114,7 +117,6 @@ class _SqlitePhonePageState extends State<SqlitePhonePage> {
         //清除title左右padding，默认情况下会有一定的padding距离
         toolbarHeight: 44,
         elevation: 0,
-        //由于title本身是接受一个widget，所以可以直接给他一个自定义的widget。
         title: SizedBox(
           width: double.infinity,
           height: 30,
@@ -273,6 +275,8 @@ class _SqlitePhonePageState extends State<SqlitePhonePage> {
                                   });
                                   _addPhone();
                                   Navigator.pop(context);
+                                  counter.changeName(name);
+                                  counter.changePhone(phone);
                                 },
                                 child: Container(
                                   height: 50,

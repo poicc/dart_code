@@ -36,7 +36,7 @@ import 'package:flutter_demo/route/unknown_page.dart';
 // import 'package:flutter_demo/basic/date_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'file/my_app.dart';
+import 'file/my_app1.dart';
 
 void main() {
   runApp(const MyApp());
