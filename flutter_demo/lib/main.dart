@@ -3,6 +3,7 @@ import 'package:flutter_demo/route/count/count_page.dart';
 import 'package:flutter_demo/route/page_one.dart';
 import 'package:flutter_demo/route/page_three.dart';
 import 'package:flutter_demo/route/unknown_page.dart';
+import 'package:flutter_demo/screen/main_app_bar.dart';
 // import 'package:flutter_demo/feign/screens/main_screen.dart';
 // import 'package:flutter_demo/basic/text_widget.dart';
 // import 'package:flutter_demo/basic/image_widget.dart';
@@ -35,8 +36,6 @@ import 'package:flutter_demo/route/unknown_page.dart';
 // import 'package:flutter_demo/basic/form_widget.dart';
 // import 'package:flutter_demo/basic/date_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
-import 'file/my_app1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -136,7 +135,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
       // home: PaintPage(doubleList: doubleList),
-      home: const MyApp1(),
+      home: const MyHomePage(title: '屏幕适配'),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const NewsPage(),
