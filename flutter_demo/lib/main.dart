@@ -3,7 +3,6 @@ import 'package:flutter_demo/route/count/count_page.dart';
 import 'package:flutter_demo/route/page_one.dart';
 import 'package:flutter_demo/route/page_three.dart';
 import 'package:flutter_demo/route/unknown_page.dart';
-import 'package:flutter_demo/screen/main_app_bar.dart';
 // import 'package:flutter_demo/feign/screens/main_screen.dart';
 // import 'package:flutter_demo/basic/text_widget.dart';
 // import 'package:flutter_demo/basic/image_widget.dart';
@@ -36,6 +35,9 @@ import 'package:flutter_demo/screen/main_app_bar.dart';
 // import 'package:flutter_demo/basic/form_widget.dart';
 // import 'package:flutter_demo/basic/date_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+
+import 'generated/l10n.dart';
+import 'i18n/intl_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -108,7 +110,7 @@ class MyApp extends StatelessWidget {
     //     ),
     //   ),
     // ];
-    final _navKey = GlobalKey<NavigatorState>();
+    final navKey = GlobalKey<NavigatorState>();
 
     // final List<double> doubleList = [2.0, 5.0, 8.0, 9.0, 2.0, 4.0];
 
@@ -125,17 +127,19 @@ class MyApp extends StatelessWidget {
       },
       onUnknownRoute: (RouteSettings setting) =>
           MaterialPageRoute(builder: (context) => const UnknownPage()),
-      navigatorKey: _navKey,
+      navigatorKey: navKey,
       debugShowCheckedModeBanner: false,
       title: 'Flutter UIs',
       // theme: themeList[model.themeIndex],
       localizationsDelegates: const [
+        S.delegate,
         GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
       ],
-      supportedLocales: const [Locale('zh', 'CH'), Locale('en', 'US')],
+      supportedLocales: S.delegate.supportedLocales,
       // home: PaintPage(doubleList: doubleList),
-      home: const MyHomePage(title: '屏幕适配'),
+      home: const IntlPage(),
       // onGenerateRoute: onGenerateRoute,
       // routes: {
       //   '/': (context) => const NewsPage(),
